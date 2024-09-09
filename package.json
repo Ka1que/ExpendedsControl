@@ -1,14 +1,18 @@
 {
   "name": "serv",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node NodeJS/server.js",
+    "onAir": "node --watch server.js"
   },
   "author": "",
   "license": "ISC",
   "description": "teste1",
   "dependencies": {
+    "fastify": "^4.28.1",
     "serv": "file:"
   }
 }
